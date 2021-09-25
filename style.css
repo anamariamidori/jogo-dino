@@ -1,0 +1,89 @@
+body {
+    background: #fafafa;
+}
+  
+.fim {
+    width:240px;
+    height:210px;
+    align-items: center;
+    text-align: center;
+    background-color:rgba(168, 168, 168, 0.678);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:60px;
+    padding:10px;
+    justify-items: center;
+    background-image: url(./img/caveira.png);
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.dino {
+  position: absolute;
+  bottom: 0;
+  background-image: url(./img/dino.png);
+  width: 60px;
+  height: 60px;
+}
+
+
+.bird {
+  position: absolute;
+  bottom: 150px;
+  background-image: url(./img/bird.png);
+  width: 30px;
+  height: 18px;
+  left: 775px;
+}
+
+@keyframes bird{
+  0% {
+    background-image: url('./img/bird.png');
+  }
+  25% {
+    background-image: url('./img/bird1.png');
+  }
+  50% {
+    background-image: url('./img/bird.png');
+  }
+  75% {
+    background-image: url('./img/bird1.png');
+  }
+  100% {
+    background-image: url('./img/bird.png');
+  }
+}
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(./img/cactus.png);
+}
+
+#game-over {
+  text-align: center;
+  color: #666;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  background-image: url(./img/background.png);
+  background-repeat: repeat-x;
+  animation: slideright 2000s infinite linear;
+  -webkit-animation: slideright 2000s infinite linear;
+  width: 100%;
+  height: 200px;
+}
